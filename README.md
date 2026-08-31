@@ -2,15 +2,14 @@ I developed an interactive FIFA World Cup 2026 Power BI Dashboard to analyze tou
 🔹 What I Used
 - Power BI for data analysis and interactive visualization.
 - DAX Measures to create dynamic KPIs and performance metrics.
-- HTML & CSS to design custom interactive visuals and cards inside Power BI.
+- HTML & CSS to design custom visuals and interactive cards inside Power BI.
 - Data Modeling to organize and analyze the tournament data.
 🔹 Dashboard Features
 - Total Attendance
 - Total Matches
 - Total Stadiums
 - Total Goals
-- Top Scorer
-- Top Scoring Team
+- Top Scorer & Top Scoring Team
 - Player Performance
 - Team Performance KPIs
 - Average Goals per Scorer
@@ -21,9 +20,23 @@ I developed an interactive FIFA World Cup 2026 Power BI Dashboard to analyze tou
 - Team Ranking
 - Qualification Rate
 - Interactive Player Card & Top Scorers Orbit
-💡 Custom HTML Visuals
-One of the main parts of the project was creating custom HTML/CSS visuals inside Power BI instead of relying only on standard Power BI visuals.
-I created custom player cards and an interactive Top Scorers Orbit using HTML, CSS, and dynamic DAX measures connected to the dataset.
-🎥 The video demonstrates the final dashboard and explains the main features, DAX measures, and custom HTML visuals used in the project.
+🔹 Key DAX Functions Used
+- SUM() — calculating total goals, attendance, points, and other metrics.
+- CALCULATE() — creating dynamic calculations based on filter context.
+- FILTER() — filtering teams and players based on specific conditions.
+- MAX() — identifying top performance values such as maximum goals.
+- MIN() — retrieving minimum performance values.
+- AVERAGE() — calculating average goals and performance metrics.
+- COUNTROWS() — counting records and teams.
+- DISTINCTCOUNT() — counting unique players, teams, matches, and stadiums.
+- TOPN() — identifying and ranking top players and teams.
+- SELECTEDVALUE() — making the custom HTML visuals respond dynamically to slicer selections.
+- LOOKUPVALUE() — retrieving related player and team information.
+- CONCATENATEX() — generating dynamic HTML content from multiple records.
+- DIVIDE() — safely calculating ratios and percentages.
+- SWITCH() & TRUE() — implementing conditional logic.
+- FORMAT() — formatting numbers and KPI values for display.
+🔹 Custom HTML Visuals
+A key part of the project was creating custom HTML/CSS visuals inside Power BI, including dynamic player cards and a Top Scorers Orbit, with the content controlled by DAX measures.
 Technologies:
 Power BI | DAX | HTML | CSS | Data Analysis | Data Visualization
